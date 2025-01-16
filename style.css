@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background-color: #f4f4f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 3px solid #0073e6;
+  padding: 3px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+}
+
+.bio {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.link-button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.link-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1a1a1a;
+  }
+  
+  .container {
+    background: #242424;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+  
+  .bio {
+    color: #888;
+  }
+}
